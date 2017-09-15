@@ -1,4 +1,7 @@
-# ClientSuperBot
+# Client Super Bot
+
+[![Build Status](https://semaphoreci.com/api/v1/choroshin/client-super-bot/branches/master/shields_badge.svg)](https://semaphoreci.com/choroshin/client-super-bot)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
