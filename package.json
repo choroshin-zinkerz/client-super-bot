@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "headless": "ng test --browser PhantomJS",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
