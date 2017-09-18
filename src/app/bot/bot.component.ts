@@ -1,16 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { BotService } from './service/bot.service';
 
 @Component({
   selector: 'app-bot',
   templateUrl: './bot.component.html',
-  styleUrls: ['./bot.component.css']
+  styleUrls: ['./bot.component.scss']
 })
 export class BotComponent implements OnInit {
- // TODO : Olga needs to add bot service
- // TODO : Oleg create text and 'query' button
-  constructor() { }
+  private queryText: string;
+  private queryResult: string;
+  private botService: BotService;
+
+  constructor(botService: BotService) {
+    this.botService = botService;
+  }
 
   ngOnInit() {
   }
 
+  private onButtonClicked() {
+    this.queryResult = this.botService.getData(this.queryText);
+  }
 }
