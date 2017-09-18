@@ -1,3 +1,8 @@
-<p>
-  bot works!
-</p>
+<div class="bot-container">
+  <input [(ngModel)] ="queryText" type="text">
+  <button (click)="onButtonClicked()">Query</button>
+  <div *ngFor="let item of queryResult">
+    <span>{{item.id}}</span>
+    <span>{{item.name}}</span>
+  </div>
+</div>

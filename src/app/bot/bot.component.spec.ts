@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BotComponent } from './bot.component';
+import { FormsModule } from '@angular/forms';
+import { BotService } from './service/bot.service';
 
 describe('BotComponent', () => {
   let component: BotComponent;
@@ -8,9 +10,11 @@ describe('BotComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BotComponent ]
+      imports: [FormsModule],
+      providers: [BotService],
+      declarations: [BotComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
