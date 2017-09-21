@@ -18,7 +18,7 @@ export class BotComponent implements OnInit {
   ngOnInit() {
   }
 
-  private onButtonClicked() {
+   onButtonClicked() {
     this.queryResult = this.botService.getData(this.queryText);
   }
 }
