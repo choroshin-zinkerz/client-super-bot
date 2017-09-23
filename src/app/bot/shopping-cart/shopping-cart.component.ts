@@ -24,7 +24,6 @@ export class ShoppingCartComponent implements OnInit {
   };
 
   removeItem(index) {
-    console.log(index);
     this.invoice.items.splice(index, 1);
   }
 
