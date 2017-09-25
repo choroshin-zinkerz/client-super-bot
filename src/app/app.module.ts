@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BotModule } from './bot/bot.module';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BotModule } from './bot/bot.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    BotModule
+    BotModule,
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
