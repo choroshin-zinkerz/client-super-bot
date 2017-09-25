@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BotComponent } from './bot.component';
 import { FormsModule } from '@angular/forms';
 import { BotService } from './service/bot.service';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 describe('BotComponent', () => {
   let component: BotComponent;
@@ -12,7 +13,7 @@ describe('BotComponent', () => {
     TestBed.configureTestingModule({
       imports: [FormsModule],
       providers: [BotService],
-      declarations: [BotComponent]
+      declarations: [BotComponent, ShoppingCartComponent]
     })
       .compileComponents();
   }));
