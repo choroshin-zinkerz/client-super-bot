@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
     items: [{
       qty: 1,
       description: 'item',
-      cost: 2.0
+      cost: 2
     }]
   };
 
