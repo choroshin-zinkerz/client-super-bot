@@ -10,7 +10,7 @@ export class CartComponent implements OnInit {
   public invoice = {
     items: [{
       qty: 1,
-      description: 'item',
+      description: 'item 1',
       cost: 2
     }]
   };
